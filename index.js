@@ -336,7 +336,7 @@ async function starts() {
     			const apakah = ['Si','No']
                         const kapankah = ['Otro día','Otra semana','Otro mes','Otro año']
 			const botNumber = client.user.jid
-			const ownerNumber = ["573146224366@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["972524588528@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 	                const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -362,7 +362,7 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '593997889284@s.whatsapp.net'
+                        const NomerOwner = '972524588528@s.whatsapp.net'
                         const conts = mek.key.fromMe ? client.user.jid : client.contacts[sender] || { notify: jid.replace(/@.+/, '') }
                         const pushname = mek.key.fromMe ? client.user.name : conts.notify || conts.vname || conts.name || '-'
 			
@@ -831,8 +831,8 @@ break
 				reply(data.result)
 				break
 	case 'creador':
-					client.sendMessage(from, {displayname: "Ochoa", vcard: vcard}, MessageType.contact, { quoted: mek})
-				 client.sendMessage(from, 'Hola 👋 te saluda Ochoa, este es un mensaje predeterminado al igual que el audio.\n\nArriba esta mi contacto por si tienen algun problema con las descargas o yo que se.\nYo soy dueño de este bot y lo controlo, yo cree la base de datos y le doy mantenimiento.\nEl numero osea mi contacto de arriba no es un bot, si te dio pereza escuchar el audio.\nBueno disfruten del bot.\n\n_*by Ochoa*_',MessageType.text, { quoted: mek} )
+					client.sendMessage(from, {displayname: "Dragón", vcard: vcard}, MessageType.contact, { quoted: mek})
+				 client.sendMessage(from, 'Hola 👋 te saluda Dragón, este es un mensaje predeterminado al igual que el audio.\n\nArriba esta mi contacto por si tienen algun problema con las descargas o yo que se.\nYo soy dueño de este bot y lo controlo, yo cree la base de datos y le doy mantenimiento.\nEl numero osea mi contacto de arriba no es un bot, si te dio pereza escuchar el audio.\nBueno disfruten del bot.\n\n_*by Ochoa*_',MessageType.text, { quoted: mek} )
 						 break
 	case 'hidetag':
 					client.updatePresence(from, Presence.composing) 
@@ -1151,7 +1151,7 @@ break
 					break
 			        
 				
-				//FIN DE ANTILINK HECHO POR OCHOA
+				//FIN DE ANTILINK HECHO POR DRAGÓN
 				
 //ADMINISTRACION DE GRUPOS
 		                
