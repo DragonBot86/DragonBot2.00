@@ -1,7 +1,7 @@
 const help = (prefix) => {
 	return `
 
-⌜ _*DragonBot by Dragón*_ ⌟  
+⌜𝘿𝙧𝙖𝙜𝙤𝙣𝘽𝙤𝙩 𝙗𝙮 𝘿𝙧𝙖𝙜𝙤𝙣⌟  
 
 ◉ *INFORMACION*
    ○ Comando: ⌜ ${prefix} ⌟
@@ -101,8 +101,7 @@ Para activar los NSFW coloque el siguiente comando ${prefix}nsfw 1 y para desact
 
 
 
-
-_*by Dragón*_
+𝙗𝙮 𝘿𝙧𝙖𝙜𝙤𝙣
 
 
 `
