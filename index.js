@@ -321,7 +321,7 @@ async function starts() {
 					Iv: 'Este no es un link de youtube'
 					},
 				only: {
-					group: '[❗] Este comando es solo para grupos',
+					group: '[❗] Este comando es solo para gruposxd',
 					ownerG: '[❗] Este comando solo puede ser utilizado por un admins del grupo',
 					ownerB: '[❗] Este comando solo lo usa Dragón',
 					admin: '[❗] Este comando solo puede ser utilizado por administradores del grupo',
@@ -906,7 +906,7 @@ break
 
 			case 'apagar':
             case 'off':                           
-			 if (!isOwner) return reply('tu quien eres para decirme que hacer?, No eres Dragón')
+			 if (!isOwner) return reply('tu quien eres para decirme que hacer?')
                                         reply('Me apagare en 3 Segundos....')
                                         setTimeout( () => {
                                         client.close() }, 3000)
@@ -923,7 +923,7 @@ break
                                         break
 			
 			case 'restaurar':
-                                        if (!isOwner) return reply('tu quien eres para decirme que hacer?, No eres Dragón)
+                                        if (!isOwner) return reply('tu quien eres para decirme que hacer?)
                                         reply('LA INFORMACION DE ESTE USUARIO SE RESTABLECERA PARA PODER USAR Y ESCANEAR EL CODIGO EN OTRO DISPOSITIVO')
                                         exec(`bash restore.sh`, (err, stdout) => {
                                         if (err) return reply(err)
