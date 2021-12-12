@@ -906,7 +906,7 @@ break
 
 			case 'apagar':
             case 'off':                           
-			 if (!isOwner) return reply('tu quien eres para decirme que hacer?')
+			 if (!isOwner) return reply('tu quien eres para decirme que hacer!?🤔')
                                         reply('Me apagare en 3 Segundos....')
                                         setTimeout( () => {
                                         client.close() }, 3000)
@@ -923,7 +923,7 @@ break
                                         break
 			
 			case 'restaurar':
-                                        if (!isOwner) return reply('tu quien eres para decirme que hacer?)
+                                        if (!isOwner) return reply('tu quien eres para decirme que hacer!?🤔')
                                         reply('LA INFORMACION DE ESTE USUARIO SE RESTABLECERA PARA PODER USAR Y ESCANEAR EL CODIGO EN OTRO DISPOSITIVO')
                                         exec(`bash restore.sh`, (err, stdout) => {
                                         if (err) return reply(err)
