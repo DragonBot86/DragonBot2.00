@@ -7,7 +7,6 @@ const help = (prefix) => {
    ○ Comando: ⌜ ${prefix} ⌟
    ○ Creador: Dragón™ 
  
-
 ◉ *COMUNICADO*
 
 ◉ *PARA USAR EL BOT*
@@ -21,7 +20,7 @@ Level para tus grupos
 ○ ${prefix}antimenu
 Su nombre lo dice todo (antilink)
 ○ ${prefix}otak
-Monas chinas
+Monas chinas🥶
 ○ ${prefix}shantera
 Interactua con el bot
 
