@@ -13,7 +13,7 @@ Prueba tu suerte en el medidor de fan de cuties 😱
 
 _*Pronto Agregare El ttt*_
      
-_*by Ochoa*_
+_*by Dragón*_
 `
 
 }
