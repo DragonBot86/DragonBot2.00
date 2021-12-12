@@ -258,11 +258,16 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `¡HOLA NEFASTO! @${num.split('@')[0]}🥶 \n\n『BIENVENIDO/A a *${mdata.subject}*』\n\nCumple las reglas\n\n_PRESENTATE CON FOTO, EDAD, NOMBRE Y PAIS :)_\n\n*Pasame Pack Si Eres Morra XDXD*`
+				teks = `¡¡𝙃𝙤𝙡𝙖 𝙉𝙚𝙛𝙖𝙨𝙩𝙤!! @${num.split('@')[0]}⛓️\n\n『Bienvenido/a a *${mdata.subject}*』\n\n☘︎𝗧𝗼𝗱𝗼𝘀 𝘀𝗼𝗻 𝗯𝗶𝗲𝗻𝘃𝗲𝗻𝗶𝗱𝗼𝘀, 𝗽𝗲𝗿𝗼 𝗿𝗲𝘀𝗽𝗲𝘁𝗲𝗻 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀, 𝗼𝗸?\n\n《⛓️》 𝑷𝒓𝒆𝒔𝒆𝒏𝒕𝒂𝒓𝒔𝒆 𝒄𝒐𝒏:
+𝙁𝙤𝙩𝙤:
+𝙉𝙤𝙢𝙗𝙧𝙚:
+𝙀𝙙𝙖𝙙:
+𝙋𝙖𝙞𝙨:《⛓️》
+\n\n☘︎𝙉𝙤 𝙡𝙞𝙣𝙠 𝙙𝙚 𝙩𝙪 𝙜𝙧𝙪𝙥𝙞𝙩𝙤 𝙙𝙚 𝙢𝙞𝙚𝙧𝙙𝙖`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `Bueno, se fue @${num.split('@')[0]} 👋\n\nUNA PUTAAAAA MENOOOOOOOOOOOOOS`
+				teks = `Bueno, se fue @${num.split('@')[0]} 👋\n\nAdios zorra`
 				client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
@@ -318,7 +323,7 @@ async function starts() {
 				only: {
 					group: '[❗] Este comando es solo para grupos',
 					ownerG: '[❗] Este comando solo puede ser utilizado por un admins del grupo',
-					ownerB: '[❗] Este comando solo lo usa Ochoa',
+					ownerB: '[❗] Este comando solo lo usa Dragón',
 					admin: '[❗] Este comando solo puede ser utilizado por administradores del grupo',
 					Badmin: '[❗] Este comando solo se puede usar cuando el bot se convierte en administrador',
                                         pegatina: 'Calma crack estoy haciendo tu sticker 👏\n\n*Recuerda los stickersgif son de 6 segundos*\n\n_*by Dragón*_',
@@ -832,7 +837,7 @@ break
 				break
 	case 'creador':
 					client.sendMessage(from, {displayname: "Dragón", vcard: vcard}, MessageType.contact, { quoted: mek})
-				 client.sendMessage(from, 'Hola 👋 te saluda Dragón, este es un mensaje predeterminado al igual que el audio.\n\nArriba esta mi contacto por si tienen algun problema con las descargas o yo que se.\nYo soy dueño de este bot y lo controlo, yo cree la base de datos y le doy mantenimiento.\nEl numero osea mi contacto de arriba no es un bot, si te dio pereza escuchar el audio.\nBueno disfruten del bot.\n\n_*by Ochoa*_',MessageType.text, { quoted: mek} )
+				 client.sendMessage(from, 'Hola 👋 te saluda Dragón, este es un mensaje predeterminado al igual que el audio.\n\nArriba esta mi contacto por si tienen algun problema con las descargas o yo que se.\nYo soy dueño de este bot y lo controlo, yo cree la base de datos y le doy mantenimiento.\nEl numero osea mi contacto de arriba no es un bot, si te dio pereza escuchar el audio.\nBueno disfruten del bot.\n\n𝙗𝙮 𝘿𝙧𝙖𝙜𝙤𝙣',MessageType.text, { quoted: mek} )
 						 break
 	case 'hidetag':
 					client.updatePresence(from, Presence.composing) 
@@ -901,7 +906,7 @@ break
 
 			case 'apagar':
             case 'off':                           
-			 if (!isOwner) return reply('tu quien eres para decirme que hacer!?🤔')
+			 if (!isOwner) return reply('tu quien eres para decirme que hacer?, No eres Dragón')
                                         reply('Me apagare en 3 Segundos....')
                                         setTimeout( () => {
                                         client.close() }, 3000)
@@ -918,7 +923,7 @@ break
                                         break
 			
 			case 'restaurar':
-                                        if (!isOwner) return reply('tu quien eres para decirme que hacer!?🤔')
+                                        if (!isOwner) return reply('tu quien eres para decirme que hacer?, No eres Dragón)
                                         reply('LA INFORMACION DE ESTE USUARIO SE RESTABLECERA PARA PODER USAR Y ESCANEAR EL CODIGO EN OTRO DISPOSITIVO')
                                         exec(`bash restore.sh`, (err, stdout) => {
                                         if (err) return reply(err)
@@ -1502,7 +1507,7 @@ break
 		if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 		anu = await fetchJson(`https://api.zeks.me/api/ytmp4?apikey=${apikey}&url=${args[0]}`, {method: 'get'})
 		if (anu.error) return reply(anu.error.yt)
-		teks = `*⌜Video Encontrado ✅⌟*\n◉ *Título:* ${anu.result.title} \n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP4 ⚠*\n\n_*Servicio proveido por Ochoa*_`
+		teks = `*⌜Video Encontrado ✅⌟*\n◉ *Título:* ${anu.result.title} \n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP4 ⚠*\n\n_*Servicio proveido por Dragón*_`
 		lagu = await getBuffer(anu.result.thumbnail)
                 client.sendMessage(from, lagu, image, {quoted: mek, caption: teks})
 		buffer = await getBuffer(anu.result.url_video)
@@ -1522,7 +1527,7 @@ var reg = body.slice(8)
 var nombre = reg.split("|")[0];
 user.push(sender)
 fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: PUTA MIA \`\`\`\n\n\`\`\`Hora MX: ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]: ${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}menu\`\`\`\n\`\`\`\nTotal de usuários: ${user.length}\`\`\``, text, {quoted: mek})
+client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: PUTA DE DRAGÓN 🥶 \`\`\`\n\n\`\`\`Hora MX: ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]: ${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}menu\`\`\`\n\`\`\`\nTotal de usuários: ${user.length}\`\`\``, text, {quoted: mek})
 break
                                 
 //FIN DE REGISTRO  
@@ -1702,12 +1707,12 @@ break
                   }
 
 		if (budy.includes(`Bot`)) {
-				  reply(`Dime Qlona`)
+				  reply(`Dime put@?`)
 				  }
   
 
 		if (budy.includes(`bot`)) {
-			      reply(`Dime Qlona`)
+			      reply(`Dime put@?`)
 				  }
 	  
 
@@ -1724,11 +1729,11 @@ break
 				   reply(`Quieres?`)
 				   }
 				  
-		if (budy.includes(`Ochoa`)) {
+		if (budy.includes(`Dragon`)) {
 				   reply(`Eu Que Quieres`)
 				   }
 					  
-		if (budy.includes(`ochoa`)) {
+		if (budy.includes(`Dragon`)) {
 				   reply(`Eu Que Quieres`)
 				   }
 
