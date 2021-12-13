@@ -1722,7 +1722,7 @@ break
 		  
 
 		if (budy.includes(`Pito`)) {
-				  reply(`Quieres?`)
+				  reply(`Quieress?`)
 			      }
 			  
 		if (budy.includes(`pito`)) {
