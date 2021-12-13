@@ -945,7 +945,7 @@ break
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 *TODAS LAS PUTAS* 〙✪══\n╠➥'+teks+'╚═〘 _*by Ochoa*_ 〙', members_id, true)
+					mentions('╔══✪〘 *TODAS LAS PUTAS* 〙✪══\n╠➥'+teks+'╚═〘 𝘿𝙧𝙖𝙜𝙤𝙣𝘽𝙤𝙩 〙', members_id, true)
 					break
                                 case 'send':
 					var pc = body.slice(6)
@@ -1168,7 +1168,7 @@ client.groupLeave (from)
 }, 2000)
 setTimeout( () => {
 client.updatePresence(from, Presence.composing) 
-client.sendMessage(from, 'AHI NOS VEMOS DIJO EL CIEGO', text) // ur cods
+client.sendMessage(from, 'Chao putas de Dragón', text) // ur cods
 }, 0)
 break
        
