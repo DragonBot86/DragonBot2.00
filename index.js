@@ -258,12 +258,11 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `¡¡𝙃𝙤𝙡𝙖 𝙉𝙚𝙛𝙖𝙨𝙩𝙤!! @${num.split('@')[0]}⛓️\n\n『Bienvenido/a a ${mdata.subject}』\n\n✞︎𝗡𝗼 𝘃𝗲𝗻𝗴𝗮𝘀 𝗱𝗲 𝘃𝗶𝗿𝗴𝗲𝗻 𝗮𝗰𝗼𝘀𝗮𝗻𝗱𝗼 𝗮 𝗹𝗮𝘀 𝗰𝗵𝗶𝗰𝗮𝘀, 𝗽𝗲𝗻𝗱𝗲𝗷𝗼✞︎\n\n《⛓️》 𝑷𝒓𝒆𝒔𝒆𝒏𝒕𝒂𝒓𝒔𝒆 𝒄𝒐𝒏:
+				teks = `¡¡𝙃𝙤𝙡𝙖𝙖𝙖 𝙉𝙚𝙛𝙖𝙨𝙩𝙤!!🖇️ @${num.split('@')[0]}⛓️\n\n『Bienvenido/a a ${mdata.subject}』\n\n《⛓️》 𝑷𝒓𝒆𝒔𝒆𝒏𝒕𝒂𝒓𝒔𝒆 𝒄𝒐𝒏:
 𝙁𝙤𝙩𝙤:
 𝙉𝙤𝙢𝙗𝙧𝙚:
 𝙀𝙙𝙖𝙙:
-𝙋𝙖𝙞𝙨:《⛓️》
-\n\n☘︎𝙉𝙤 𝙡𝙞𝙣𝙠 𝙙𝙚 𝙩𝙪 𝙜𝙧𝙪𝙥𝙞𝙩𝙤 𝙙𝙚 𝙢𝙞𝙚𝙧𝙙𝙖`
+𝙋𝙖𝙞𝙨:《⛓️》\n\n🍒𝙉𝙤 𝙡𝙞𝙣𝙠 𝙙𝙚 𝙩𝙪 𝙜𝙧𝙪𝙥𝙞𝙩𝙤 𝙙𝙚 𝙢𝙞𝙚𝙧𝙙𝙖\n\n⌈𝙀𝙫𝙞𝙩𝙖 𝙝𝙖𝙘𝙚𝙧 𝙢𝙖𝙢𝙖𝙙𝙖𝙨, 𝙢𝙚𝙟𝙤𝙧 𝙙𝙖𝙢𝙚𝙡𝙖𝙨:)⌋`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
@@ -335,7 +334,7 @@ async function starts() {
 					insta: 'Calmao 😎\n\n*Estoy descargando tu post 🔄*\n\nAguarde un momento, por favor\n\n_*by Dragón*_',
 					musica: 'Calmao pa estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube*\n\n*Si el comando !play no funciona utiliza el comando !play2*\n\nSi no envio tu musica checa que version tienes del bot con !version\n\n_*by Dragón*_',
 					musica2: 'Calmao pa estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube*\n\n*Si el comando !play2 no funciona utiliza el comando !play*\n\nSi no envio tu musica checa que version tienes del bot con !version\n\n_*by Dragón*_',
-					daftarB: `「NO ESTAS REGISTRADO」\n\nWTF Y ESTE RAMDOM\n\nPara poder usarme escribe el siguente comando\n\nComando: ${prefix}daftar Nombre\nEjemplo: ${prefix}daftar Dragón`,
+					daftarB: `「NO ESTAS REGISTRADO🍒」\n\nNO ESTAS PERMITIDO\n\nPara poder usarme escribe el siguiente comando\n\nComando: ${prefix}daftar Nombre\nEjemplo: ${prefix}daftar Dragón`,
 				}
 			}
     			const apakah = ['Si','No']
@@ -945,7 +944,7 @@ break
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 *TODAS LAS PUTAS* 〙✪══\n╠➥'+teks+'╚═〘 𝘿𝙧𝙖𝙜𝙤𝙣𝘽𝙤𝙩 〙', members_id, true)
+					mentions('╔══✪〘 TODOS 〙✪══\n╠➥'+teks+'╚═〘 𝘿𝙧𝙖𝙜𝙤𝙣𝘽𝙤𝙩 〙', members_id, true)
 					break
                                 case 'send':
 					var pc = body.slice(6)
